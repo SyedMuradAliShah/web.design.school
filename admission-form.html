@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - admisisonform</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="herosec title-sec mt-3 rounded-4">
+        <div class="hero-banner position-relative">
+          <header class="rounded-4 position-absolute start-0 top-0 w-100">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Classes</a>
+                    </li>
+                  </ul>
+                  <div class="navbtn">
+                    <a href="" class="text-uppercase secondary-btn small"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <h1 class="text-center text-white">School Admission Form</h1>
+        </div>
+      </div>
+    </div>
+<section class="admission-form">
+  <div class="container mt-5">
+    
+    <form>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label small">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label small">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="col-md-6">
+                <label for="dob" class="form-label small">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="col-md-6">
+                <label for="gender" class="form-label small">Gender</label>
+                <select class="form-select" id="gender" required>
+                    <option selected disabled>Choose...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label for="address" class="form-label small">Address</label>
+                <textarea class="form-control" id="address" rows="3" required></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label small">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label small">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="col-md-6">
+                <label for="class" class="form-label small">Class Applying For</label>
+                <select class="form-select" id="class" required>
+                    <option selected disabled>Choose...</option>
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                    <option value="4">Class 4</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="documents" class="form-label small">Upload Documents</label>
+                <input type="file" class="form-control" id="documents" multiple required>
+            </div>
+            <div class="col-12 mt-4">
+                <button type="submit" class="primary-btn border-0">Submit Application</button>
+            </div>
+        </div>
+    </form>
+</div>
+</section>
+    <footer class="py-5 mt-5"> 
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5">
+          <div class="col mb-4 mb-lg-0">
+            <h5 class="text-white mb-4 fw-bold">School Lms</span></h5>
+            <p class="text-white small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur, rerum qui minus aperiam ad dolores commodi quia corrupti cum?
+            </p>
+            <p class="text-white mb-1"><i class="fa-solid fa-phone"></i> <span class="small">+92-345-1234567</span></p>
+            <p class="text-white mb-1"><i class="fa-solid fa-envelope"></i> <span class="small">info@gmail.com</span></p>
+            <p class="text-white mb-1"><i class="fa-solid fa-location"></i><span class="small"> Lorem ipsum dolor sit amet.</span></p>
+            
+          </div>
+          <div class="col mb-4 mb-lg-0 ps-lg-5">
+            <h5 class="text-white mb-4 fw-bold">Company</h5>
+            <ul class="links mb-0">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Teachers</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Classes</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4 mb-lg-0">
+            <h5 class="text-white mb-4 fw-bold">Working Hours</h5>
+            <p class="text-white"><b>Mon - Sat :</b> 8:00 AM - 1:30 PM</p>
+            <p class="text-white"><b>Fri :</b> 8:00 AM - 12:00 PM</p>
+            <p class="text-white"><b>Sun :</b> Closed</p>
+          </div>
+          <div class="col mb-4 mb-lg-0">
+            <h5 class="text-white mb-4 fw-bold">Subscribe to the Newsleeters</h5>
+            <div class="footer-newsletter-form">
+              <form id="newslettersForm" action="#" method="POST">
+                  <div class="form-group">
+                      <input type="email" name="email" class="form-control" id="mail" placeholder="Email ..." required="">
+                      <button type="submit" class="section-icon-btn primary-btn"><i class="fa-solid fa-search"></i></button>
+                  </div>
+              </form>
+          </div>
+          
+          <div class="d-md-flex align-items-center justify-content-center gap-3 social-media mt-5">
+            <a href="" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+            <div></div>
+          </div>
+        </div>
+        <div class="pt-5 text-center" style="border-top: 1px solid rgb(255, 255, 255);">
+          <p class="mb-0 text-white">Copyright © 2024 All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="./assets/javascript/swiper.min.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+  </body>
+</html>

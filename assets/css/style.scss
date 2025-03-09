@@ -10,8 +10,9 @@ body{
   font-family: "Noto Serif", serif !important;
 }
 /* light theme styles */
-    $primary: #9b9fe4;
-    $secondary: #2f313e;
+    $primary: #3c4396;
+    $secondary: #499bfe;
+    $gray:#666666;
     $light: #f3f4fb !important;
     $text-color: #676767; // Assuming you wanted black text for light 
     $transition: 0.4s all;
@@ -72,13 +73,11 @@ body{
     text-decoration: none;
     color: #ffffff !important;
     transition: $transition;
+    display: inline-block;
     &:hover{
         background-color: $primary;
 
     }
-  }
-  body{
-    background-color: $light;
   }
   .shadow{
     box-shadow: 0px 2px 10px #d8d8d8 !important;
@@ -88,27 +87,29 @@ body{
   }
   .herosec{
     header{
+      z-index: 9999;
         .navbar{
             .nav-link{
-                color: $secondary !important;
+                color: #ffffff !important;
                 padding: 7px 15px;    
-                
+                border-radius: 10px;
                 transition: $transition;
                 font-size: 0.9rem;
                 &:hover{
-                    color: $primary !important;      
+                    color: #ffffff !important;   
+                    background-color: $primary;   
                          
                 }
             }
-            .active{
-                background-color: $primary;
-                border-radius: 8px;
-                color: #ffffff !important;
-                &:hover{
-                    color: #ffffff !important;      
+            // .active{
+            //     background-color: $primary;
+            //     border-radius: 8px;
+            //     color: #ffffff !important;
+            //     &:hover{
+            //         color: #ffffff !important;      
                          
-                }        
-            }
+            //     }        
+            // }
         }
     }
     .swiper-slide{
@@ -116,13 +117,14 @@ body{
       border-radius: 20px;
       overflow: hidden;
       &::after{
-        background-color: #2f313e5f;
+        background-color: $primary;
         width: 100%;
         height: 100%;
         position: absolute;
         content: '';
         top: 0;
         left: 0;
+        opacity: 0.2;
       }
       img{
         height: 100%;
@@ -138,11 +140,37 @@ body{
       }
     }
   }
+  .counter{
+    .icon-3d{
+      top: -30px;
+      right: -50px;
+      
+    }
+    .items{
+      border-radius: 10px 50px 10px 10px;
+.img-box{
+  width: 140px;
+  height: 100%;
+  img{
+    width: 42px;
+  }
+}
+    }
+  }
+  .principal{
+    .prin-box{
+      .principl-img{
+        width: 500px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
 .offer{
     .offer-box{
         transition: $transition;
         &:hover{
-            background-color: $primary;
+            background-color: $secondary;
             p{
                 color: #ffffff !important;
             }
@@ -161,15 +189,15 @@ body{
         }
     }
 }
-.courses{
-  .swiper-slide{
+.teachers{
     a{
       transition: 0.3s all;
+      border: 1px solid $secondary;
       &:hover{
-        box-shadow: 0px 5px 20px rgb(106, 106, 106);
+        background-color: rgba(243, 243, 243, 0.347);
+        border: 1px solid $primary;
       }
     }
-  }
   .all-btn{
     i{
       background: linear-gradient(to right, $primary, $secondary);
@@ -216,55 +244,6 @@ body{
   }
   .brown-box{
     background: linear-gradient(30deg, rgb(233, 119, 119), rgb(165, 42, 42));
-  }
-}
-.team {
-  .team-box {
-    box-shadow: 0px 5px 15px rgba(13, 0, 111, 0.1058823529);
-    border-radius: 15px;
-    border: 1px solid #ffffff;
-    transition: 0.4s all;
-    border-radius: 10px;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: 0.4s all;
-      clip-path: polygon(50% 0%, 100% 0, 100% 92%, 0 100%, 0 0);
-      border-bottom: none;
-  }
-  .team-media {
-    bottom: -32px;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    width: 100%;
-    transition: 0.4s all;
-    opacity: 0;
-    a {
-      margin: 0px 5px;
-      color: $secondary;
-      font-size: 1rem;
-      transition: 0.3s all;
-      background-color: #ffffff;
-      width: 40px;
-      display: inline-block;
-      padding: 10px;
-      padding: 8px;
-      border-radius: 100px;
-      &:hover{
-        background: $primary;
-        color: $secondary;
-      }
-  }
-}
-&:hover{
-  .team-media{
-    bottom: 0px;
-    opacity: 1;
-
-  }
-}
   }
 }
 
@@ -338,4 +317,52 @@ footer {
     }
   }
 }
+}
+
+.title-sec{
+  background: url(../images/title.jpg) no-repeat center / cover;
+  // height: 300px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  h1{
+    padding: 8rem 0rem;
+    font-weight: 700;
+  }
+  &::after {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+}
+.admission-form{
+  form{
+    .form-control{
+      padding: 10px;
+      background-color: rgba(246, 246, 246, 0.365);
+      border: 1px solid rgb(226, 226, 226);
+      transition: $transition;
+      &:focus{
+        box-shadow: 0px 5px 10px #8080801f;
+        background: #fff;
+        border: 1px solid $primary;
+      }
+    }
+    .form-select{
+      padding: 10px;
+      background-color: rgba(246, 246, 246, 0.365);
+      border: 1px solid rgb(226, 226, 226);
+      &:focus{
+        box-shadow: 0px 5px 10px #8080801f;
+        background: #fff;
+        border: 1px solid $primary;
+      }
+    }
+  }
 }
