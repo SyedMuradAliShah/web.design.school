@@ -199,6 +199,7 @@ body{
       }
     }
   .all-btn{
+    border: none;
     i{
       background: linear-gradient(to right, $primary, $secondary);
       padding: 20px 21px;
@@ -207,6 +208,8 @@ body{
       transition: $transition;
     }
     &:hover{
+      border: none;
+      background-color: transparent;
       i{
         background: $primary;
       }
@@ -246,7 +249,13 @@ body{
     background: linear-gradient(30deg, rgb(233, 119, 119), rgb(165, 42, 42));
   }
 }
-
+.gallery{
+  img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
 footer {
   background-color: $secondary;
   background-position: top center;
@@ -318,7 +327,14 @@ footer {
   }
 }
 }
-
+.contact{
+ 
+  .mdp-our-contacts{
+    ul{
+      list-style-type: none;
+    }
+  }
+}
 .title-sec{
   background: url(../images/title.jpg) no-repeat center / cover;
   // height: 300px;

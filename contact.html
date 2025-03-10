@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Contact</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="herosec title-sec mt-3 rounded-4">
+      <div class="hero-banner position-relative">
+        <header class="rounded-4 position-absolute start-0 top-0 w-100">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./teachers.html">Teachers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="navbtn">
+                  <a href="" class="text-uppercase secondary-btn small">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <h1 class="text-center text-white">Contact Us</h1>
+      </div>
+    </div>
+  </div>
+  <section class="contact mt-5">
+    <div class="container">
+      <div class="map">
+        <iframe width="100%" height="350"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26317.65730828096!2d71.88764644969703!3d34.459580707649025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d9537dcc7b03e5%3A0x4d454c345a1de325!2sSakhakot%2C%20Pakistan!5e0!3m2!1sen!2s!4v1741636126671!5m2!1sen!2s"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="mdp-contact mt-5">
+        <div class="row">
+          <div class="col-lg-8 col-md-7">
+            <div class="comment-area">
+              <h3 class="mb-4">Add Comment</h3>
+              <form id="contact-form" method="post" action="#">
+                <div class="response"></div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group mb-4"><input type="text" name="name" class="form-control" placeholder="Name" required="">
+                    </div><!--form-group end-->
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group mb-4"><input type="email" name="email" class="form-control" placeholder="Email"
+                        required=""></div><!--form-group end-->
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group mb-4">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <!--form-group end-->
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-submit">
+                      <button type="button" id="submit" class="primary-btn border-0">Send Now <i
+                          class="fa fa-long-arrow-alt-right"></i></button></div><!--form-submit end-->
+                  </div>
+                </div>
+              </form>
+            </div><!--comment-area end-->
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <div class="mdp-our-contacts">
+              <h3 class="mb-4">Our Contacts</h3>
+              <ul class="p-0">
+                <li>
+                  <div class="d-flex mb-4 gap-3 align-items-center flex-wrap">
+                    <div class="icon-v"><img src="./assets/images/contact.png" width="40px" alt=""></div>
+                    <div class="dd-cont">
+                      <h6 class="mb-1">Call</h6>
+                      <span class="small">+2 342 5446 67</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex mb-4 gap-3 align-items-center flex-wrap">
+                    <div class="icon-v"><img src="./assets/images/work.png" width="40px" alt=""></div>
+                    <div class="dd-cont">
+                      <h6 class="mb-1">Work Time</h6>
+                      <span class="small">Mon - Fri 8 AM - 5 PM</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex mb-4 gap-3 align-items-center flex-wrap">
+                    <div class="icon-v"><img src="./assets/images/location.png" width="40px" alt=""></div>
+                    <div class="dd-cont">
+                      <h6 class="mb-1">Address</h6>
+                      <span class="small">Sakhakot</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div><!--mdp-our-contacts end-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-5 mt-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5">
+        <div class="col mb-4 mb-lg-0">
+          <h5 class="text-white mb-4 fw-bold">School Lms</span></h5>
+          <p class="text-white small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur, rerum qui minus aperiam ad
+            dolores commodi quia corrupti cum?
+          </p>
+          <p class="text-white mb-1"><i class="fa-solid fa-phone"></i> <span class="small">+92-345-1234567</span></p>
+          <p class="text-white mb-1"><i class="fa-solid fa-envelope"></i> <span class="small">info@gmail.com</span></p>
+          <p class="text-white mb-1"><i class="fa-solid fa-location"></i><span class="small"> Lorem ipsum dolor sit
+              amet.</span></p>
+
+        </div>
+        <div class="col mb-4 mb-lg-0 ps-lg-5">
+          <h5 class="text-white mb-4 fw-bold">Company</h5>
+          <ul class="links mb-0">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Teachers</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Classes</a></li>
+          </ul>
+        </div>
+        <div class="col mb-4 mb-lg-0">
+          <h5 class="text-white mb-4 fw-bold">Working Hours</h5>
+          <p class="text-white"><b>Mon - Sat :</b> 8:00 AM - 1:30 PM</p>
+          <p class="text-white"><b>Fri :</b> 8:00 AM - 12:00 PM</p>
+          <p class="text-white"><b>Sun :</b> Closed</p>
+        </div>
+        <div class="col mb-4 mb-lg-0">
+          <h5 class="text-white mb-4 fw-bold">Subscribe to the Newsleeters</h5>
+          <div class="footer-newsletter-form">
+            <form id="newslettersForm" action="#" method="POST">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" id="mail" placeholder="Email ..." required="">
+                <button type="submit" class="section-icon-btn primary-btn"><i class="fa-solid fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+
+          <div class="d-md-flex align-items-center justify-content-center gap-3 social-media mt-5">
+            <a href="" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="pt-5 text-center" style="border-top: 1px solid rgb(255, 255, 255);">
+        <p class="mb-0 text-white">Copyright © 2024 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+  <script src="./assets/javascript/swiper.min.js"></script>
+  <script src="./assets/javascript/javascript.js"></script>
+</body>
+
+</html>

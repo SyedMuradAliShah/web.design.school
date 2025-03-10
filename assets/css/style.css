@@ -179,12 +179,19 @@ body {
   background-color: rgba(243, 243, 243, 0.347);
   border: 1px solid #3c4396;
 }
+.teachers .all-btn {
+  border: none;
+}
 .teachers .all-btn i {
   background: linear-gradient(to right, #3c4396, #499bfe);
   padding: 20px 21px;
   color: #ffffff;
   font-size: 1.4rem;
   transition: 0.4s all;
+}
+.teachers .all-btn:hover {
+  border: none;
+  background-color: transparent;
 }
 .teachers .all-btn:hover i {
   background: #3c4396;
@@ -221,6 +228,13 @@ body {
 }
 .teachers .brown-box {
   background: linear-gradient(30deg, rgb(233, 119, 119), rgb(165, 42, 42));
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -287,6 +301,10 @@ footer .social-media a {
 footer .social-media a:hover {
   background-color: #3c4396;
   color: #499bfe;
+}
+
+.contact .mdp-our-contacts ul {
+  list-style-type: none;
 }
 
 .title-sec {
