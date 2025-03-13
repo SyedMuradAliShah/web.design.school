@@ -28,4 +28,32 @@ if (document.querySelector(".myTeachers")) {
 
 // testmonails
 
+// lightbox
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const images = document.querySelectorAll(".lightbox-trigger");
+  const closeBtn = document.querySelector(".close");
+
+  // Open Lightbox
+  images.forEach(image => {
+      image.addEventListener("click", function () {
+          lightbox.style.display = "flex";
+          lightboxImg.src = this.src;
+      });
+  });
+
+  // Close Lightbox on clicking 'X' or outside the image
+  closeBtn.addEventListener("click", function () {
+      lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", function (e) {
+      if (e.target !== lightboxImg) {
+          lightbox.style.display = "none";
+      }
+  });
+});
+
+// lightbox
 

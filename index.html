@@ -12,12 +12,12 @@
   </head>
 
   <body>
-    <div class="upper-header primarybg p-3">
+    <!-- <div class="upper-header bg-light p-3">
       <div class="row row-cols-1 row-cols-md-2 align-items-center">
         <div class="col">
           <div class="d-md-flex align-items-center gap-4 mb-4 mb-md-0">
-            <p class="text-white mb-2 mb-md-0"><i class="fa-solid fa-phone"></i> <span>+92-345-1234567</span></p>
-            <p class="text-white mb-0"><i class="fa-solid fa-envelope"></i> <span>info@gmail.com</span></p>
+            <p class="primarytext mb-2 mb-md-0"><i class="fa-solid fa-phone"></i> <span>+92-345-1234567</span></p>
+            <p class="primarytext mb-0"><i class="fa-solid fa-envelope"></i> <span>info@gmail.com</span></p>
           </div>
         </div>
         <div class="col">
@@ -29,11 +29,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <header class="rounded-4">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg px-lg-5">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.jpg" width="70px" alt=""></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -64,7 +64,7 @@
               </li>
             </ul>
             <div class="navbtn">
-              <a href="" class="text-uppercase primary-btn small"
+              <a href="./admission-form.html" class="text-uppercase primary-btn small"
                 >Apply Now</a
               >
             </div>
@@ -79,7 +79,7 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide position-relative">
-                <img src="./assets/images/slide1.jpg" alt="" />
+                <img src="./assets/images/slide1.webp" alt="" />
                 <div class="hero-text">
                  <div class="row">
                   <div class="col-12 col-lg-10">
@@ -97,7 +97,7 @@
                 </div>
               </div>
               <div class="swiper-slide position-relative">
-                <img src="./assets/images/slide2.jpg" alt="" />
+                <img src="./assets/images/slide2.webp" alt="" />
                 <div class="hero-text">
                   <div class="row">
                     <div class="col-12 col-lg-10">
@@ -172,16 +172,19 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita accusamus corrupti,  unde assumenda quae rem illum ad ducimus sint obcaecati?
                 </p>
                   <div class="counter">
-                    <div class="primarybg items p-3 py-5 position-relative">
+                    <div class="primarybg items p-3 py-4 py-md-5 position-relative">
                       <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 justify-content-center">
-                        <div class="col text-center">
-                              <h4 class="text-white mb-lg-0 fw-bold">50+ Schools</h4>
+                        <div class="col text-center mb-4 mb-md-0">
+                          <h4 class=" text-white fw-bold">25+</h4>
+                          <h5 class="text-white">Year Experience</h5>
                         </div>
-                        <div class="col text-center border-start border-end">
-                              <h4 class="text-white mb-lg-0 fw-bold">50k+ Students</h4>
+                        <div class="col text-center mb-4 mb-md-0 border-start border-end">
+                          <h4 class="text-white fw-bold">100+</h4>
+                          <h5 class="text-white">Instructors</h5>
                         </div>
-                        <div class="col text-center">
-                              <h4 class="text-white mb-lg-0 fw-bold">20+ Years</h4>
+                        <div class="col text-center ">
+                          <h4 class="text-white fw-bold">6,561+</h4>
+                          <h5 class="text-white">Students</h5>
                         </div>
                       </div>
                     </div>
@@ -212,13 +215,27 @@
               <div class="waves wave-3"></div>
             </div>
           </div>
-          <a href="" class="playbtn video-popup mfp-iframe" data-lity><i class="fa-solid fa-play"></i></a>
+          <a href="" class="playbtn video-popup mfp-iframe" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-play"></i></a>
         </div>
       </div>
     </div>
   </div>
 </div>
-    </section>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" src="https://www.youtube.com/embed/K4TOrB7at0Y?si=n9EOW6n7FZhjekr5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
     <section class="teachers mt-5">
       <div class="container">
@@ -232,36 +249,36 @@
                     href=""
                     class=" p-4 rounded-3 d-block text-decoration-none"
                   >
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-lg-4">
+                  <div class="row mb-lg-4">
+                    <div class=" col-lg-4">
                       <div class="staf-img rounded-4 overflow-hidden">
                         <img src="./assets/images/1.jpg" width="100%" alt="">
                       </div>
                     </div>
-                    <div class="col-8 col-md-12 col-lg-8">
+                    <div class="col-lg-8">
                       <div class="">
                         <span class="small secondarytext">Principal</span>
                         <h4 class="primarytext mb-1">Mr.Zahoor</h4>
                         <p class="text-black-50 small mb-2">
                          MS Computer Science
                         </p>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                        </div>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
-                          </div>
-                        </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
                     </div>
                   </div>
                   
@@ -272,36 +289,36 @@
                     href=""
                     class=" p-4 rounded-3 d-block text-decoration-none"
                   >
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-lg-4">
+                  <div class="row mb-lg-4">
+                    <div class=" col-lg-4">
                       <div class="staf-img rounded-4 overflow-hidden">
                         <img src="./assets/images/2.jpg" width="100%" alt="">
                       </div>
                     </div>
-                    <div class="col-8 col-md-12 col-lg-8">
+                    <div class="col-lg-8">
                       <div class="">
                         <span class="small secondarytext">Principal</span>
                         <h4 class="primarytext mb-1">Mr.Zahoor</h4>
                         <p class="text-black-50 small mb-2">
                          MS Computer Science
                         </p>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                        </div>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
-                          </div>
-                        </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
                     </div>
                   </div>
                   
@@ -312,36 +329,36 @@
                     href=""
                     class=" p-4 rounded-3 d-block text-decoration-none"
                   >
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-lg-4">
+                  <div class="row mb-lg-4">
+                    <div class=" col-lg-4">
                       <div class="staf-img rounded-4 overflow-hidden">
                         <img src="./assets/images/3.jpg" width="100%" alt="">
                       </div>
                     </div>
-                    <div class="col-8 col-md-12 col-lg-8">
+                    <div class="col-lg-8">
                       <div class="">
                         <span class="small secondarytext">Principal</span>
                         <h4 class="primarytext mb-1">Mr.Zahoor</h4>
                         <p class="text-black-50 small mb-2">
                          MS Computer Science
                         </p>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                        </div>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
-                          </div>
-                        </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
                     </div>
                   </div>
                   
@@ -352,36 +369,36 @@
                     href=""
                     class=" p-4 rounded-3 d-block text-decoration-none"
                   >
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-lg-4">
+                  <div class="row mb-lg-4">
+                    <div class=" col-lg-4">
                       <div class="staf-img rounded-4 overflow-hidden">
                         <img src="./assets/images/4.jpg" width="100%" alt="">
                       </div>
                     </div>
-                    <div class="col-8 col-md-12 col-lg-8">
+                    <div class="col-lg-8">
                       <div class="">
                         <span class="small secondarytext">Principal</span>
                         <h4 class="primarytext mb-1">Mr.Zahoor</h4>
                         <p class="text-black-50 small mb-2">
                          MS Computer Science
                         </p>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
-                          </div>
-                        </div>
-                        <div class="row row-cols-1">
-                          <div class="col">
-                            <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
-                          </div>
-                          <div class="col">
-                            <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
-                          </div>
-                        </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-phone me-2"></i> (+92)-345-1234567</p>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                      <p class="text-black xsmall mb-1"><i class="fa-solid fa-at me-2"></i>zahoor@gmail.com</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-black xsmall mb-0"><i class="fa-solid fa-at me-2"></i>zahoor@outlook.com</p>
                     </div>
                   </div>
                   
@@ -513,32 +530,36 @@
         <div class="d-md-flex justify-content-between align-items-center mb-5"><h2 class="text-uppercase fw-bold primarytext">Student Gallery</h2> <a href="" class="primary-btn">View Gallery</a></div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
           <div class="col mb-4">
-            <img src="./assets/images/g1.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g1.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
           <div class="col mb-4">
-            <img src="./assets/images/g2.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g2.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
           <div class="col mb-4">
-            <img src="./assets/images/g3.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g3.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
           <div class="col mb-4">
-            <img src="./assets/images/g4.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g4.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
           <div class="col mb-4">
-            <img src="./assets/images/g5.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g5.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
           <div class="col mb-4">
-            <img src="./assets/images/g6.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g6.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
           <div class="col mb-4">
-            <img src="./assets/images/g7.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g7.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
           <div class="col mb-4">
-            <img src="./assets/images/g1.jpg" class="rounded-4" alt="">
+            <img src="./assets/images/g1.jpg" class="rounded-4 lightbox-trigger" alt="">
           </div>
         </div>
       </div>
     </section>
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+  </div>
     <footer class="py-5 mt-5"> 
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5">
