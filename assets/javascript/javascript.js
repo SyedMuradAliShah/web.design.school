@@ -16,8 +16,11 @@ if (document.querySelector(".myTeachers")) {
       320: {
         slidesPerView: 1,
       },
-      1024: {
+      768: {
         slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
       },
     },
   });

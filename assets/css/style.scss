@@ -154,6 +154,7 @@ body{
     .box{
       color: #ffffff;
       transition: $transition;
+      height: 100%;
       &:hover{
         border-radius: 25px;
         box-shadow: 0px 5px 20px rgb(189, 189, 189);
@@ -256,7 +257,7 @@ body{
       opacity: 0.5;
     }
     .area-box{
-      background: url(../images/green_bg-1.png) no-repeat;
+      // background: url(../images/green_bg-1.png) no-repeat;
       background-size: contain;
     }
   }
@@ -301,7 +302,7 @@ body{
   .principal{
     .prin-box{
       .principl-img{
-        width: 500px;
+        width: 370px;
         right: 0;
         bottom: 0;
       }
@@ -461,5 +462,12 @@ footer {
         border: 1px solid $primary;
       }
     }
+  }
+}
+
+@media (max-width: 786px){
+  .herosec .swiper-slide .hero-text{
+    width: 95%;
+    left: 50%;
   }
 }
