@@ -327,6 +327,7 @@ header .navbar .nav-link:hover {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 .lightbox {
